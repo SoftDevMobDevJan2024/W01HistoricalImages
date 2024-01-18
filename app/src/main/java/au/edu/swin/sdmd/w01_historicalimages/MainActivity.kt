@@ -12,10 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnAbout = findViewById<Button>(R.id.btnAbout)
-        btnAbout.setOnClickListener{
-            displayAbout(it)
-        }
+        // uncomment these if onClick() is not set in activity_main.xml
+//        val btnAbout = findViewById<Button>(R.id.btnAbout)
+//        btnAbout.setOnClickListener{
+//            displayAbout(it)
+//        }
     }
 
     fun displayAbout(v: View) {
